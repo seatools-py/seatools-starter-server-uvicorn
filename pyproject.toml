@@ -44,6 +44,6 @@ packages = [
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "src/seatools/ioc/starters/uvicorn/*",
+    "src/seatools/ioc/starters/*",
 ]
 sources = ["src"]
