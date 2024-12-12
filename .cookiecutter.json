@@ -1,0 +1,14 @@
+{
+    "_checkout": null,
+    "_output_dir": "D:\\Codes\\Project\\seatools-py",
+    "_repo_dir": "C:\\Users\\admin\\.cookiecutters\\cookiecutter-seatools-starter-python",
+    "_template": "git@gitee.com:seatools-py/cookiecutter-seatools-starter-python.git",
+    "author": "seatools-py",
+    "copyright_year": "2024",
+    "email": "521274311@qq.com",
+    "friendly_name": "Seatools Starter Server Uvicorn",
+    "license": "MIT",
+    "project_name": "seatools-starter-server-uvicorn",
+    "simple_name": "uvicorn",
+    "version": "1.0.0"
+}

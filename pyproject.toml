@@ -1,0 +1,49 @@
+[project]
+name = "seatools-starter-server-uvicorn"
+version = "1.0.0"
+authors = [
+    { name = "seatools-py", email = "521274311@qq.com" },
+]
+description = "Seatools Starter Server Uvicorn"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+keywords = [
+    "seatools",
+    "server",
+    "uvicorn"
+]
+
+dependencies = [
+    "seatools",
+    "uvicorn[standard]",
+    "click",
+]
+
+[project.scripts]
+uvicorn = "seatools.ioc.starters.uvicorn.main:main"
+
+[project.urls]
+Homepage = "https://github.com/seatools-py/seatools-starter-server-uvicorn"
+Issues = "https://github.com/seatools-py/seatools-starter-server-uvicorn/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+#only-packages = true
+packages = [
+    "seatools"
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/seatools/ioc/starters/uvicorn/*",
+]
+sources = ["src"]
