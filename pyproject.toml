@@ -1,6 +1,6 @@
 [project]
 name = "seatools-starter-server-uvicorn"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
     { name = "seatools-py", email = "521274311@qq.com" },
 ]
