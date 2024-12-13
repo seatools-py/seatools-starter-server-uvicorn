@@ -577,7 +577,8 @@ def run(
     if not isinstance(config, dict):
         config = {}
 
-    app = (app[0] if isinstance(app, (list, tuple)) else app) if app else config.get('app')
+    # default use seatools.ioc.server.app:app to support seatools.ioc.starter.web.*
+    app = ((app[0] if isinstance(app, (list, tuple)) else app) if app else config.get('app')) or 'seatools.ioc.server.app:app'
     config = SeatoolsConfig(
         ioc_app,
         app,
